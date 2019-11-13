@@ -32,4 +32,5 @@ def full?(board)
   is_full = board.all? do |position|
     (board[position] == "X" || board[position] == "O")
   end
+  return is_full
 end
