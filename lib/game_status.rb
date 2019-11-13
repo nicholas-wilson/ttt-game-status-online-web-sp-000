@@ -56,6 +56,7 @@ end
 #winner declares who won the match
 def winner(board)
   win = won?(board)
+  puts win.class
   if (board[win[0]] == "X")
     return "X"
   elsif (board[win[0]] == "O")
