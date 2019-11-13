@@ -43,3 +43,12 @@ def draw?(board)
     return false
   end
 end
+
+#over? check to see if the game is done
+def over?(board)
+  if (draw?(board) || won?(board))
+    return true
+  else 
+    return false
+  end
+end
