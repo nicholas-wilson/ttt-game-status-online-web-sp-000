@@ -34,3 +34,12 @@ def full?(board)
   end
   return is_full
 end
+
+#draw? checks if the match ends in a tie
+def draw?(board)
+  if (full?(board) && !won?(board))
+    return true
+  else
+    return false
+  end
+end
