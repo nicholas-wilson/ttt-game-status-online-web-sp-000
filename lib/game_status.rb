@@ -52,3 +52,15 @@ def over?(board)
     return false
   end
 end
+
+#winner declares who won the match
+def winner(board)
+  win = won?(board)
+  if (board[win[0]] == "X")
+    return "X"
+  elsif (board[win[0]] == "O")
+    return "O"
+  else
+    return nil
+  end
+end
